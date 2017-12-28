@@ -1,0 +1,28 @@
+{
+    "name": "angkee/laradmin",
+    "description": "laravel admin panel generator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "angkee",
+            "email": "angkee@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Angkee\\Admin\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Angkee\\Admin\\AdminServiceProvider"
+            ]
+        }
+    }
+}

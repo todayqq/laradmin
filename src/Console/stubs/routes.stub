@@ -1,0 +1,21 @@
+<?php
+
+Route::group([
+    'prefix'        => config('admin.route.prefix'),
+    'namespace'     => config('admin.route.namespace'),
+    'middleware'    => 'web',
+], function () {
+    Route::get('login', 'AuthController@showLoginForm')->name('showLoginForm');
+    Route::post('login', 'AuthController@postLogin')->name('login');
+    Route::get('logout', 'AuthController@getLogout')->name('logout');
+});
+
+Route::group([
+    'prefix'        => config('admin.route.prefix'),
+    'namespace'     => config('admin.route.namespace'),
+    'middleware'    => ['web', 'auth'],
+], function () {
+
+    Route::get('/', 'HomeController@index')->name('home');
+
+});

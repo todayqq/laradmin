@@ -1,0 +1,13 @@
+html, body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: NotoSansHans-Regular,AvenirNext-Regular,arial,Hiragino Sans GB,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif !important;
+}
+
+div.report_item {
+	margin: 2px;
+    display: inline-block;
+}
+
+div.report_item img {
+	margin: 0 auto;
+	display: block;
+}
