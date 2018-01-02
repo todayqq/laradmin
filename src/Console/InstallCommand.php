@@ -48,9 +48,7 @@ class InstallCommand extends Command
     {
         $this->call('migrate');
 
-        // if (Administrator::count() == 0) {
-        //     $this->call('db:seed', ['--class' => \Angkee\Admin\Database\AdminTablesSeeder::class]);
-        // }
+        $this->call('db:seed', ['--class' => \Angkee\Admin\Database\UsersTableSeeder::class]);
     }
 
     /**
